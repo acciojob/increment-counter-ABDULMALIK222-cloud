@@ -1,16 +1,11 @@
 //your JS code here. If required.
-  const counterPara = document.getElementById("counter");
-    const incrementButton = document.getElementById("incrementBtn");
+let counterValue = 0;
 
-    // Add event listener to the button
-    incrementButton.addEventListener("click", function() {
-      // Get current value and convert to number
-      let currentValue = parseInt(counterPara.innerText);
+const counter = document.getElementById("counter");
+const incrementBtn = document.getElementById("incrementBtn");
 
-      // Show alert with the un-incremented value
-      alert("Current Value: " + currentValue);
-
-      // Increment and update the counter
-      currentValue++;
-      counterPara.innerText = currentValue;
-    });
+incrementBtn.addEventListener('click', function (){
+	alert(counterValue);
+	counterValue++;
+	counter.textContent = counterValue;
+})
